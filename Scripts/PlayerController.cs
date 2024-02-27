@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
+   [SerializeField] private float speed;
+   [SerializeField] private float rotateSpeed;
+
+
     Rigidbody2D rb;
     Animator anim;
-    private bool isWalking=false;
+
+
+    private bool isWalking;
     Vector2 moveInput;
-    public float rotateSpeed;
+    
     // Start is called before the first frame update
     void Start()
     {
