@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,7 +147,1015 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Main Player Running_0
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 6959
+        width: 1044
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd0ca2aeae4b54439f5f0d7a471a521
+      internalID: -962147593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_1
+      rect:
+        serializedVersion: 2
+        x: 3604
+        y: 7875
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e49e4b4dffe164c901a406c28c71bd
+      internalID: 1763995956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_2
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 7828
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6cba36f4fb3ed46ae664be10493664
+      internalID: -791598381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_3
+      rect:
+        serializedVersion: 2
+        x: 2774
+        y: 6863
+        width: 978
+        height: 1010
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530fab24ed489d44db361c4bb1ac89ad
+      internalID: 1003503517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 7586
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d953e991329eaf44af1d853fe82e55b
+      internalID: 940960052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 7014
+        width: 1034
+        height: 707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5b19de7b79eb840b9a8530a15a08d3
+      internalID: -977199653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_6
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 7590
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebda17c8c50d007418bd4c9e6a3822f9
+      internalID: 665770929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_7
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 7543
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147e899b4f7e6f841a4a658f5318cb4a
+      internalID: -2135854399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_8
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 7004
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f316fc3beb5440645bb1f20a3aba2359
+      internalID: -853286321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_9
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 6863
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbe1a71346a2f44b9e685550556293f
+      internalID: -120321868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_10
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 5434
+        width: 1038
+        height: 1249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907d1918af1465a4c868527c676f4f99
+      internalID: 1852114293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 6656
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c80e5d4055a9043ac871ea10ce75c6
+      internalID: 1249539170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_12
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 6656
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47afc8597e9594b4294039298b853f64
+      internalID: 1421807241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_13
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 5471
+        width: 1028
+        height: 1156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1559a0b7662d9c24ca13c322f1e9ce8c
+      internalID: -923763224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_14
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 6301
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4d4a952b345524e93d90ab61c8cc12
+      internalID: 437996971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_15
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 5588
+        width: 1054
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0002a027c159bb54da7012421c35bd91
+      internalID: 87431564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_16
+      rect:
+        serializedVersion: 2
+        x: 2831
+        y: 6207
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c367891935881384da9e2c2c2c420f4e
+      internalID: -540347356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_17
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 6117
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c265a0fb28c46b04ebcd77c66a72065f
+      internalID: 1047765662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_18
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 6070
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016de28f8e6657a44b87cc7fb88fa804
+      internalID: 1508972023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_19
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 4346
+        width: 1145
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f0b95b01417fa43b76f4ae78c44ef6
+      internalID: 1109781657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_20
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 5250
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddc574607d779d41897d8a34768a317
+      internalID: -2018402608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_21
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 5106
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4bfbc6f24db1c4db245ba8ad16a85f
+      internalID: -1980493564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_22
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 4350
+        width: 1138
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ff62b08ad0a8a49b8ed7051ec2611f
+      internalID: 863727551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_23
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 4455
+        width: 1062
+        height: 754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be45b573cca0f6e43be0a2686dd7ce6f
+      internalID: -1478889934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_24
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 4992
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8f377d74469fd46ae74a3034fd2d2e
+      internalID: 1335212735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_25
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 4938
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2e71ff36b9e8444ae0e14c0e1b0670
+      internalID: 1929151631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_26
+      rect:
+        serializedVersion: 2
+        x: 3382
+        y: 4426
+        width: 23
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626f4643efd054f4088871c65f9eb3af
+      internalID: 1628414181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_27
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 3020
+        width: 1135
+        height: 1001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac3ec8536e61304a84b0736dea288de
+      internalID: -647618072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_28
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 2967
+        width: 1064
+        height: 1054
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9b5ba5f92509b47a161e3170cd8bac
+      internalID: 1120563102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_29
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 3465
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24743647f697f5845b3d9726157bbfdf
+      internalID: -125597979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_30
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 2973
+        width: 978
+        height: 1099
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45c4072f629bfb4bb8a7d877bc4f35b
+      internalID: -721019509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1309
+        width: 1068
+        height: 1295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403fb642c54db3444bcfebd7adb6c84b
+      internalID: -1504345322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2414
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8dac5ba1a55c54d98ba76ee5b64056
+      internalID: 1007348298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_33
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1402
+        width: 1104
+        height: 1133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62aa3a682168b940829e301de3983a8
+      internalID: 508448814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_34
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 1506
+        width: 1055
+        height: 959
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31315a2af9c767548ad5eccd48e1cb54
+      internalID: -2030550940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_35
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 2219
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f3b0a5cb027b040a4d7429180f8e24
+      internalID: -1727605162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_36
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1988
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109bcffea61e5174a9972a04d3096a86
+      internalID: 1941324176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_37
+      rect:
+        serializedVersion: 2
+        x: 3138
+        y: 1502
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfd1d8e1cedd5c45b5e7bab4ec0d03a
+      internalID: -584859810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_38
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 1473
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096a5651d98a3a24f886a7db29b4df5f
+      internalID: 455546812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_39
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1285
+        width: 42
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933ae1a3bd1898148ad4be54033d01c9
+      internalID: 161304966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_40
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1285
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5339d3238f3bc7a4285db9ea1169c5dc
+      internalID: 654571354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_41
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 76
+        width: 1148
+        height: 842
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c094d37cdfce31f40bdf8e00979e9f05
+      internalID: 1673512896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_42
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 137
+        width: 1215
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0985096173ec9834d989f1e52179dcca
+      internalID: 133632508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_43
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 746
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33911a03d7528b048ad92d38e6e55116
+      internalID: 983898924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_44
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 722
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ba2b563e2d646478f0627654de2ac2
+      internalID: -901460730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_45
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 699
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a5406a0e361de4689b17aa60777f50
+      internalID: 2026036359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_46
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 703
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b456dab7fcd3d634b943e529107c2a69
+      internalID: 953687262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Player Running_47
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 113
+        width: 23
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407bc9b314ac80646b3a9d4d174deecb
+      internalID: -2037077014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +1166,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Main Player Running_0: -962147593
+      Main Player Running_1: 1763995956
+      Main Player Running_10: 1852114293
+      Main Player Running_11: 1249539170
+      Main Player Running_12: 1421807241
+      Main Player Running_13: -923763224
+      Main Player Running_14: 437996971
+      Main Player Running_15: 87431564
+      Main Player Running_16: -540347356
+      Main Player Running_17: 1047765662
+      Main Player Running_18: 1508972023
+      Main Player Running_19: 1109781657
+      Main Player Running_2: -791598381
+      Main Player Running_20: -2018402608
+      Main Player Running_21: -1980493564
+      Main Player Running_22: 863727551
+      Main Player Running_23: -1478889934
+      Main Player Running_24: 1335212735
+      Main Player Running_25: 1929151631
+      Main Player Running_26: 1628414181
+      Main Player Running_27: -647618072
+      Main Player Running_28: 1120563102
+      Main Player Running_29: -125597979
+      Main Player Running_3: 1003503517
+      Main Player Running_30: -721019509
+      Main Player Running_31: -1504345322
+      Main Player Running_32: 1007348298
+      Main Player Running_33: 508448814
+      Main Player Running_34: -2030550940
+      Main Player Running_35: -1727605162
+      Main Player Running_36: 1941324176
+      Main Player Running_37: -584859810
+      Main Player Running_38: 455546812
+      Main Player Running_39: 161304966
+      Main Player Running_4: 940960052
+      Main Player Running_40: 654571354
+      Main Player Running_41: 1673512896
+      Main Player Running_42: 133632508
+      Main Player Running_43: 983898924
+      Main Player Running_44: -901460730
+      Main Player Running_45: 2026036359
+      Main Player Running_46: 953687262
+      Main Player Running_47: -2037077014
+      Main Player Running_5: -977199653
+      Main Player Running_6: 665770929
+      Main Player Running_7: -2135854399
+      Main Player Running_8: -853286321
+      Main Player Running_9: -120321868
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
