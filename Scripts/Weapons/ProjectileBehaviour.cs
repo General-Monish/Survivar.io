@@ -7,8 +7,21 @@ public class ProjectileBehaviour : MonoBehaviour
     public WeaponScriptableObjects weaponData;
     protected Vector3 direction;
     public float lifetime;
+
+    protected float currentDamage;
+    protected float currentCoolDownDuration;
+    protected float currentSpeed;
+    protected int currentPierce;
+
+    private void Awake()
+    {
+        currentDamage = weaponData.Damage;
+        currentSpeed = weaponData.Speed;
+        currentPierce = weaponData.Pierce;
+        currentCoolDownDuration = weaponData.CoolDownDuration;
+    }
     // Start is called before the first frame update
-   protected virtual void Start()
+    protected virtual void Start()
     {
         Destroy(gameObject, lifetime);
     }
@@ -57,5 +70,24 @@ public class ProjectileBehaviour : MonoBehaviour
         }
         transform.localScale = scale;
         transform.rotation = Quaternion.Euler(rotation);
+    }
+
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            EnemyStats enemy = collision.GetComponent<EnemyStats>();
+            enemy.TakeDamage(currentDamage);
+            ReducePierce();
+        }
+    }
+
+    void ReducePierce()
+    {
+        currentPierce--;
+        if (currentPierce <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

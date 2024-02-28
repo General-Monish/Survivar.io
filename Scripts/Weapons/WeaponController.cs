@@ -13,7 +13,7 @@ public class WeaponController : MonoBehaviour
   protected virtual  void Start()
     {
         playerController = FindObjectOfType<PlayerController>();
-        currentCoolDown =weaponData.coolDownDuration;
+        currentCoolDown =weaponData.CoolDownDuration;
     }
 
     // Update is called once per frame
@@ -28,6 +28,6 @@ public class WeaponController : MonoBehaviour
 
    protected virtual void Attack()
     {
-        currentCoolDown =weaponData.coolDownDuration;
+        currentCoolDown =weaponData.CoolDownDuration;
     }
 }
