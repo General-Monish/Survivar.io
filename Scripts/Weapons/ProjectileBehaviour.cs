@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProjectileBehaviour : MonoBehaviour
 {
+    public WeaponScriptableObjects weaponData;
     protected Vector3 direction;
     public float lifetime;
     // Start is called before the first frame update

@@ -97,4 +97,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f62c988539a884397a7d101b592f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: a7f75a34aced4534cb5ee445bcafa0e7, type: 2}
   lifetime: 1

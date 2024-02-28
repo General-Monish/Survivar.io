@@ -15,7 +15,7 @@ public class knife : WeaponController
         if (playerController.isWalking)
         {
             base.Attack();
-            GameObject spawnKnife = Instantiate(prefabs);
+            GameObject spawnKnife = Instantiate(weaponData.prefabs);
             spawnKnife.transform.position = transform.position;
             spawnKnife.GetComponent<KnifeBehaviour>().DirChecker(playerController.moveInput);
         }
