@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     
-   [SerializeField] private float speed;
+   
    [SerializeField] private float rotateSpeed;
 
+
+   public CharacterScriptableObjects characterData;
 
     Rigidbody2D rb;
     Animator anim;
@@ -37,7 +39,7 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
          moveInput = new Vector2(horizontal, vertical);
          moveInput.Normalize();
-         rb.velocity = moveInput * speed;
+        rb.velocity = moveInput * characterData.MoveSpeed;
 
         //  if there is any input to determine if the player is walking
          isWalking = moveInput.magnitude > 0.1f;
