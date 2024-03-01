@@ -8,8 +8,7 @@ public class PlayerController : MonoBehaviour
    
    [SerializeField] private float rotateSpeed;
 
-
-   public CharacterScriptableObjects characterData;
+    PlayerStats playerStats;
 
     Rigidbody2D rb;
     Animator anim;
@@ -22,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerStats = GetComponent<PlayerStats>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -39,7 +38,7 @@ public class PlayerController : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
          moveInput = new Vector2(horizontal, vertical);
          moveInput.Normalize();
-        rb.velocity = moveInput * characterData.MoveSpeed;
+        rb.velocity = moveInput * playerStats.currentMoveSpeed;
 
         //  if there is any input to determine if the player is walking
          isWalking = moveInput.magnitude > 0.1f;

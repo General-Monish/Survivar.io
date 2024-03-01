@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPotion : MonoBehaviour, ICollectables
+public class HealthPotion : Pickup, ICollectables
 {
     public int healthToRestore;
     public void Collect()
     {
-        PlayerStats player = FindFirstObjectByType<PlayerStats>();
+        PlayerStats player = FindObjectOfType<PlayerStats>();
         player.RestoreHealth(healthToRestore);
         Destroy(gameObject);
     }
