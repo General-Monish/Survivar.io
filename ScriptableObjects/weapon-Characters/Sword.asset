@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51e8d61cd10781648a063f5f01b6f687, type: 3}
-  m_Name: KnifeChar
+  m_Name: Sword
   m_EditorClassIdentifier: 
-  startingWeapon: {fileID: 0}
+  startingWeapon: {fileID: 1007073295970582192, guid: 8c6526f38d343c440bb63ff7a0a393dc, type: 3}
   maxHealth: 1000
   recovery: 0
   moveSpeed: 5
   might: 0
   projectileSpeed: 0
+  magnet: 8

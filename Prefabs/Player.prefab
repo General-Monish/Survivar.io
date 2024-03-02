@@ -60,6 +60,7 @@ GameObject:
   - component: {fileID: 8728752298782683536}
   - component: {fileID: 4114787391346118397}
   - component: {fileID: 129748351587824201}
+  - component: {fileID: 2747909604613391796}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -81,6 +82,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2119500974517601444}
+  - {fileID: 5092296320174302939}
   - {fileID: 6860612166242438161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -211,13 +213,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9f1c068b09ef749b279d4b9f79ee3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterData: {fileID: 11400000, guid: 1ed557e1c41e3574d974faa24c02434c, type: 2}
   currentHealth: 0
   currentRecovery: 0
   currentMoveSpeed: 0
   currentMight: 0
   currentProjectileSpeed: 0
   currentmagnet: 0
+  SpawnedWeapon: []
   exp: 0
   level: 2
   expeCapping: 200
@@ -264,6 +266,86 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 4.28
+--- !u!58 &2747909604613391796
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162279902327341610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 4.28
+--- !u!1 &6597121687250441023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5092296320174302939}
+  - component: {fileID: 5856405114545852176}
+  m_Layer: 0
+  m_Name: swordController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5092296320174302939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597121687250441023}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 758094298338465440}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5856405114545852176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597121687250441023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904ab474813e69c40a37e7292d0c89c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: 043ba4b4731baba429620523ff3e5654, type: 2}
 --- !u!1 &7118384367573737771
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b76915fd62af346958bf903190df76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pullSpeed: 100
 --- !u!58 &2581399905146373094
 CircleCollider2D:
   m_ObjectHideFlags: 0

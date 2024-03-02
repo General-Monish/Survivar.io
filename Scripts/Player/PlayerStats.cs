@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-   public CharacterScriptableObjects characterData;
+    public  CharacterScriptableObjects characterData;
 
     public float currentHealth;
     [HideInInspector]
@@ -18,6 +18,9 @@ public class PlayerStats : MonoBehaviour
     public float currentProjectileSpeed;
     [HideInInspector]
     public float currentmagnet;
+
+    //Spawned Weapon
+    public List<GameObject> SpawnedWeapon;
 
     // Expeience And Level Of The Player
     [Header("Experience/Level1")]
@@ -43,12 +46,18 @@ public class PlayerStats : MonoBehaviour
 
     private void Awake()
     {
+        characterData = CharacterSelecter.GetData();
+        CharacterSelecter.Instance.DestroySingelton();
         currentHealth = characterData.MaxHealth;
         currentMoveSpeed = characterData.MoveSpeed;
         currentProjectileSpeed = characterData.ProjectileSpeed;
         currentRecovery = characterData.Recovery;
         currentMight = characterData.Might;
         currentmagnet = characterData.Magnet;
+
+        // spawning the starting weapon
+        Debug.Log("spawnWeaponCalled");
+        SpawnWeapon(characterData.StartingWeapon);
     }
 
     private void Start()
@@ -139,5 +148,16 @@ public class PlayerStats : MonoBehaviour
                 currentHealth = characterData.MaxHealth;
             }
         }
+    }
+
+    public void SpawnWeapon(GameObject weapon)
+    {
+        Debug.Log("spawn called");
+        // spawning the starting weapon
+        GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
+        Debug.Log("weapon instantitated");
+        spawnedWeapon.transform.SetParent(transform); // set weapon to achild 
+        Debug.Log("parrent set");
+        SpawnedWeapon.Add(spawnedWeapon);// add list to spawned weapons
     }
 }
