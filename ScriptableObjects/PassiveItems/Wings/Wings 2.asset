@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0efc6bbdd0e74f4da7f1921e3ddbd0b, type: 3}
-  m_Name: Knife
+  m_Script: {fileID: 11500000, guid: 54663f5d770733e438d4ba56c7a0218a, type: 3}
+  m_Name: Wings 2
   m_EditorClassIdentifier: 
-  prefabs: {fileID: 1029296818201331459, guid: 9dfdd0b43aa131742a3da61a6cc17bd9, type: 3}
-  damage: 1
-  speed: 10
-  coolDownDuration: 0.5
-  pierce: 1
+  multiPlier: 100
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: 1401386649, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

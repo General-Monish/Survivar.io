@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,22 +6,21 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public  CharacterScriptableObjects characterData;
+    CharacterScriptableObjects characterData;
 
     public float currentHealth;
     [HideInInspector]
     public float currentRecovery;
     [HideInInspector]
     public float currentMoveSpeed;
-    [HideInInspector]
+    //[HideInInspector]
     public float currentMight;
     [HideInInspector]
     public float currentProjectileSpeed;
     [HideInInspector]
     public float currentmagnet;
 
-    //Spawned Weapon
-    public List<GameObject> SpawnedWeapon;
+
 
     // Expeience And Level Of The Player
     [Header("Experience/Level1")]
@@ -44,10 +44,22 @@ public class PlayerStats : MonoBehaviour
 
     public List<LevelRange> levelRanges;
 
+    InventoryManager inventory;
+    public int weaponIndex;
+    public int passiveItemIndex;
+    public GameObject secWeaponTest;
+
+    public GameObject firstPassiveItemTest;
+    public GameObject SecPassiveItemTest;
+
+
     private void Awake()
     {
         characterData = CharacterSelecter.GetData();
         CharacterSelecter.Instance.DestroySingelton();
+
+        inventory = FindObjectOfType<InventoryManager>();
+
         currentHealth = characterData.MaxHealth;
         currentMoveSpeed = characterData.MoveSpeed;
         currentProjectileSpeed = characterData.ProjectileSpeed;
@@ -55,9 +67,14 @@ public class PlayerStats : MonoBehaviour
         currentMight = characterData.Might;
         currentmagnet = characterData.Magnet;
 
+        
+
         // spawning the starting weapon
-        Debug.Log("spawnWeaponCalled");
         SpawnWeapon(characterData.StartingWeapon);
+        SpawnPassiveItem(firstPassiveItemTest);
+        SpawnPassiveItem(SecPassiveItemTest);
+        SpawnWeapon(secWeaponTest);
+
     }
 
     private void Start()
@@ -152,12 +169,30 @@ public class PlayerStats : MonoBehaviour
 
     public void SpawnWeapon(GameObject weapon)
     {
-        Debug.Log("spawn called");
+        if (weaponIndex >= inventory.weaponSlots.Count - 1)
+        {
+            Debug.LogError("Inventory already Full!!");
+            return;
+        }
         // spawning the starting weapon
         GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
-        Debug.Log("weapon instantitated");
         spawnedWeapon.transform.SetParent(transform); // set weapon to achild 
-        Debug.Log("parrent set");
-        SpawnedWeapon.Add(spawnedWeapon);// add list to spawned weapons
+        inventory.AddWeapon(weaponIndex, spawnedWeapon.GetComponent<WeaponController>());
+
+        weaponIndex++;
+    }  
+    public void SpawnPassiveItem(GameObject passiveItem)
+    {
+        if (passiveItemIndex >= inventory.PassiveItemsSlots.Count - 1)
+        {
+            Debug.LogError("Inventory already Full!!");
+            return;
+        }
+        // spawning the starting passive item
+        GameObject spawnedpassiveitem = Instantiate(passiveItem, transform.position, Quaternion.identity);
+        spawnedpassiveitem.transform.SetParent(transform); // set weapon to achild 
+        inventory.AddPassiveItem(passiveItemIndex, spawnedpassiveitem.GetComponent<PassiveItems>());
+
+        passiveItemIndex++;
     }
 }

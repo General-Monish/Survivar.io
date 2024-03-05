@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bb19d6413376234bb63aeb67fd105f6, type: 3}
-  m_Name: Bat
+  m_Script: {fileID: 11500000, guid: 54663f5d770733e438d4ba56c7a0218a, type: 3}
+  m_Name: DamageIncreaser2 1
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  maxHealth: 2
-  damage: 100
+  multiPlier: 150
+  level: 2
+  nextLevelPrefab: {fileID: 0}
+  icon: {fileID: -62354891, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

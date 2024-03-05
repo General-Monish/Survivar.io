@@ -17,6 +17,10 @@ public class DropRateManager : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (!gameObject.scene.isLoaded)
+        {
+            return;
+        }
         float randomNumber = UnityEngine.Random.Range(0f, 100f);
         List<Drop> possibleDrops = new List<Drop>(); 
 
