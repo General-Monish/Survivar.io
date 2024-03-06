@@ -34,11 +34,15 @@ public class PlayerController : MonoBehaviour
 
     public void Movement()
     {
+        if (GameManager.Instance.isGameOver)
+        {
+            return;
+        }
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
          moveInput = new Vector2(horizontal, vertical);
          moveInput.Normalize();
-        rb.velocity = moveInput * playerStats.currentMoveSpeed;
+        rb.velocity = moveInput * playerStats.CurrentMoveSpeed;
 
         //  if there is any input to determine if the player is walking
          isWalking = moveInput.magnitude > 0.1f;

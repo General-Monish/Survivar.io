@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   startingWeapon: {fileID: 1007073295970582192, guid: 8c6526f38d343c440bb63ff7a0a393dc, type: 3}
-  maxHealth: 1000
+  maxHealth: 100
   recovery: 0
   moveSpeed: 5
   might: 1

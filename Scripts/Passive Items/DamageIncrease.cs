@@ -7,6 +7,6 @@ public class DamageIncrease : PassiveItems
     protected override void ApplyModiFier()
     {
         // this formula increases the Damage of attacking weapons  
-        player.currentMight *= 1 + passiveItemsData.Multiplier / 100f;
+        player.CurrentMight *= 1 + passiveItemsData.Multiplier / 100f;
     }
 }

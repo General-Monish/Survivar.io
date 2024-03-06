@@ -7,6 +7,6 @@ public class WingsPassiveItem : PassiveItems
     protected override void ApplyModiFier()
     {
         // this formula increases the speed 
-        player.currentMoveSpeed *= 1 + passiveItemsData.Multiplier / 100f;
+        player.CurrentMoveSpeed *= 1 + passiveItemsData.Multiplier / 100f;
     }
 }
