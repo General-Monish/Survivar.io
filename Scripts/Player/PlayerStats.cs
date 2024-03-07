@@ -170,6 +170,8 @@ public class PlayerStats : MonoBehaviour
         GameManager.Instance.projectileSpeed.text = "ProjectileSpeed:" + currentProjectileSpeed;
         GameManager.Instance.magnetRange.text = "MagnetRange:" + currentmagnet;
         GameManager.Instance.moveSpeed.text = "MoveSpeed:" + currentMoveSpeed;
+
+        GameManager.Instance.ChosenCharacterUI(characterData);
     }
 
     private void Update()
@@ -230,6 +232,8 @@ public class PlayerStats : MonoBehaviour
     {
         if (!GameManager.Instance.isGameOver)
         {
+            GameManager.Instance.AssignCharUI(level);
+            GameManager.Instance.AssignchosenWeaponAndPassiveItemUI(inventory.weaponUISlots, inventory.passiveItemUISlots);
             GameManager.Instance.GameOver();
         }
     }

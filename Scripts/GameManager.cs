@@ -17,18 +17,26 @@ public class GameManager : MonoBehaviour
     public GameState currentState;
     public GameState previousState;
 
-    [Header("UI")]
+    [Header("UI Screens")]
     public GameObject pauseScreen;
     public GameObject resultScreen;
 
 
-
+    [Header("Stats Screen")]
     public TextMeshProUGUI recovery;
     public TextMeshProUGUI moveSpeed;
     public TextMeshProUGUI projectileSpeed;
     public TextMeshProUGUI magnetRange;
     public TextMeshProUGUI might;
     public TextMeshProUGUI health;
+
+    [Header("Result Screen")]
+    public TextMeshProUGUI characterName;
+    public Image characterImage;
+    public TextMeshProUGUI levelReachedText;
+    public List<Image> chosenWeaponUI = new List<Image>(6);
+    public List<Image> chosenPassiveitemUI = new List<Image>(6);
+
 
     public bool isGameOver = false;
 
@@ -129,6 +137,52 @@ public class GameManager : MonoBehaviour
     }
     void DisplayResults()
     {
-        //resultScreen.SetActive(true);
+        resultScreen.SetActive(true);
+    }
+
+    public void ChosenCharacterUI(CharacterScriptableObjects choosenCharData)
+    {
+        characterImage.sprite = choosenCharData.Icon;
+        characterName.text = choosenCharData.name;
+    }
+
+    public void AssignCharUI(int levelReachedData)
+    {
+        levelReachedText.text = levelReachedData.ToString();
+    }
+
+    public void AssignchosenWeaponAndPassiveItemUI(List<Image> chosenWeapondata,List<Image> chosenPassiveItemData)
+    {
+        if (chosenWeapondata.Count != chosenWeaponUI.Count || chosenPassiveItemData.Count != chosenPassiveitemUI.Count)
+        {
+            Debug.Log("Chosen Weapon and Data HAve Different Lengths");
+            return;
+        }
+
+        for(int i = 0; i < chosenWeaponUI.Count - 1; i++)
+        {
+            if (chosenWeapondata[i].sprite)
+            {
+                chosenWeaponUI[i].enabled = true;
+                chosenWeaponUI[i].sprite = chosenWeapondata[i].sprite;
+            }
+            else
+            {
+                chosenWeaponUI[i].enabled = false;
+            }
+        } 
+        
+        for(int i = 0; i < chosenPassiveitemUI.Count - 1; i++)
+        {
+            if (chosenPassiveItemData[i].sprite)
+            {
+                chosenPassiveitemUI[i].enabled = true;
+                chosenPassiveitemUI[i].sprite = chosenPassiveItemData[i].sprite;
+            }
+            else
+            {
+                chosenPassiveitemUI[i].enabled = false;
+            }
+        }
     }
 }
