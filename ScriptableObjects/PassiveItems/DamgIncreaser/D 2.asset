@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54663f5d770733e438d4ba56c7a0218a, type: 3}
-  m_Name: DamageIncreaser2 1
+  m_Name: D 2
   m_EditorClassIdentifier: 
   multiPlier: 150
   level: 2
   nextLevelPrefab: {fileID: 0}
+  name: Damager
+  description: more damage amount
   icon: {fileID: -62354891, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

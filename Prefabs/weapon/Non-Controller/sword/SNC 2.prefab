@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8994781548729294019}
   - component: {fileID: 129406061285679998}
   m_Layer: 0
-  m_Name: sword
+  m_Name: SNC 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72f62c988539a884397a7d101b592f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 043ba4b4731baba429620523ff3e5654, type: 2}
+  weaponData: {fileID: 11400000, guid: 7d5a0ab883213a8429e9e4fc715fadd6, type: 2}
   lifetime: 2
 --- !u!60 &8994781548729294019
 PolygonCollider2D:

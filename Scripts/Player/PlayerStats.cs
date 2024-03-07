@@ -129,9 +129,9 @@ public class PlayerStats : MonoBehaviour
     InventoryManager inventory;
     public int weaponIndex;
     public int passiveItemIndex;
-    public GameObject secWeaponTest;
+    //public GameObject secWeaponTest;
 
-    public GameObject firstPassiveItemTest;
+    //public GameObject firstPassiveItemTest;
     public GameObject SecPassiveItemTest;
 
 
@@ -153,9 +153,9 @@ public class PlayerStats : MonoBehaviour
 
         // spawning the starting weapon
         SpawnWeapon(characterData.StartingWeapon);
-        SpawnPassiveItem(firstPassiveItemTest);
+        //SpawnPassiveItem(firstPassiveItemTest);
         SpawnPassiveItem(SecPassiveItemTest);
-        SpawnWeapon(secWeaponTest);
+        //SpawnWeapon(secWeaponTest);
 
     }
 
@@ -210,6 +210,8 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             expeCapping += expCapIncrease;
+
+            GameManager.Instance.StartLevelUp();
         }
     }
 

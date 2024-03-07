@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0efc6bbdd0e74f4da7f1921e3ddbd0b, type: 3}
-  m_Name: Knife 2
+  m_Name: Knife 3
   m_EditorClassIdentifier: 
-  prefabs: {fileID: 1029296818201331459, guid: f25749f320606d54dae3cade9b592b8e, type: 3}
+  prefabs: {fileID: 1029296818201331459, guid: 0159eed99bceea54b8df181b52548f03, type: 3}
   damage: 1
   speed: 15
   coolDownDuration: 0.3

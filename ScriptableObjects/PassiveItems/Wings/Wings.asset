@@ -15,4 +15,6 @@ MonoBehaviour:
   multiPlier: 50
   level: 1
   nextLevelPrefab: {fileID: 8615949088212899613, guid: 9886066f191e0d147b7566c6cb1d5f8c, type: 3}
+  name: Sppedy
+  description: Increases player speed
   icon: {fileID: 1401386649, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

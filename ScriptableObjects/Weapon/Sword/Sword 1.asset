@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0efc6bbdd0e74f4da7f1921e3ddbd0b, type: 3}
-  m_Name: Knife 2
+  m_Name: Sword 1
   m_EditorClassIdentifier: 
-  prefabs: {fileID: 1029296818201331459, guid: f25749f320606d54dae3cade9b592b8e, type: 3}
+  prefabs: {fileID: 1176487692205583522, guid: 4186597850f135e40964ac72ef8efbc8, type: 3}
   damage: 1
-  speed: 15
-  coolDownDuration: 0.3
+  speed: 10
+  coolDownDuration: 0.5
   pierce: 1
-  level: 2
-  nextLevelPrefab: {fileID: 0}
-  name: Knife
-  description: it shoots with More Damage
-  icon: {fileID: -1931941231, guid: 1fb810b368667004bb0186de6afe231d, type: 3}
+  level: 1
+  nextLevelPrefab: {fileID: 1007073295970582192, guid: d48bba7f578c9704eb8cf3febd84200e, type: 3}
+  name: Sword
+  description: swordddd
+  icon: {fileID: -24472546, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

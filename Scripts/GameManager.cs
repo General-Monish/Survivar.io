@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     {
         GamePlay,
         Paused,
-        GameOver
+        GameOver,
+        LevelUp
     }
 
     public GameState currentState;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     [Header("UI Screens")]
     public GameObject pauseScreen;
     public GameObject resultScreen;
+    public GameObject LevelUptScreen;
 
 
     [Header("Stats Screen")]
@@ -45,6 +47,9 @@ public class GameManager : MonoBehaviour
 
 
     public bool isGameOver = false;
+    public bool chosingUpgrade;
+
+    public GameObject playerObject;
 
     private void Awake()
     {
@@ -79,6 +84,15 @@ public class GameManager : MonoBehaviour
                     Time.timeScale = 0;
                     Debug.Log("Game Is Over");
                     DisplayResults();
+                }
+                break;
+            case GameState.LevelUp:
+                if (!chosingUpgrade)
+                {
+                    chosingUpgrade = true;
+                    Time.timeScale = 0f;
+                    Debug.Log("Level Up Shpwn");
+                    LevelUptScreen.SetActive(true);
                 }
                 break;
 
@@ -135,6 +149,7 @@ public class GameManager : MonoBehaviour
     {
         pauseScreen.SetActive(false);
         resultScreen.SetActive(false);
+        LevelUptScreen.SetActive(false);
     }
 
 
@@ -209,5 +224,19 @@ public class GameManager : MonoBehaviour
         int minutes = Mathf.FloorToInt(stopWatchtime / 60);
         int seconds = Mathf.FloorToInt(stopWatchtime % 60);
         stopWatchDisplayext.text = string.Format("{0:00}:{1:00}",minutes,seconds);
+    }
+
+    public void StartLevelUp()
+    {
+        ChangeState(GameState.LevelUp);
+        playerObject.SendMessage("RemoveAndApplyUpgrades");
+    }
+
+    public void EndLevelUp()
+    {
+        chosingUpgrade = false;
+        Time.timeScale = 1f;
+        LevelUptScreen.SetActive(false);
+        ChangeState(GameState.GamePlay);
     }
 }

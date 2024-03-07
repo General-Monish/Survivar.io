@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2961318829046279484}
   - component: {fileID: 4971592866850176334}
   m_Layer: 0
-  m_Name: level2
+  m_Name: SC 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904ab474813e69c40a37e7292d0c89c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: 7d5a0ab883213a8429e9e4fc715fadd6, type: 2}
+  weaponData: {fileID: 11400000, guid: 043ba4b4731baba429620523ff3e5654, type: 2}
