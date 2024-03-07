@@ -34,8 +34,14 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public Image characterImage;
     public TextMeshProUGUI levelReachedText;
+    public TextMeshProUGUI TimeSurvivedText;
     public List<Image> chosenWeaponUI = new List<Image>(6);
     public List<Image> chosenPassiveitemUI = new List<Image>(6);
+
+    [Header("Stopwatch")]
+    public float timeLimit;
+    float stopWatchtime;
+    public TextMeshProUGUI stopWatchDisplayext;
 
 
     public bool isGameOver = false;
@@ -60,6 +66,7 @@ public class GameManager : MonoBehaviour
         {
             case GameState.GamePlay:
                 CheckForPauseAndResume();
+                UpdateStopWatch();
                 break;
 
             case GameState.Paused:
@@ -133,6 +140,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        TimeSurvivedText.text = stopWatchDisplayext.text;
         ChangeState(GameState.GameOver);
     }
     void DisplayResults()
@@ -184,5 +192,22 @@ public class GameManager : MonoBehaviour
                 chosenPassiveitemUI[i].enabled = false;
             }
         }
+    }
+
+    public void UpdateStopWatch()
+    {
+        stopWatchtime += Time.deltaTime;
+        UpdateStopWatchDisplay();
+        if (stopWatchtime >= timeLimit)
+        {
+            GameOver();
+        }
+    }
+
+    public void UpdateStopWatchDisplay()
+    {
+        int minutes = Mathf.FloorToInt(stopWatchtime / 60);
+        int seconds = Mathf.FloorToInt(stopWatchtime % 60);
+        stopWatchDisplayext.text = string.Format("{0:00}:{1:00}",minutes,seconds);
     }
 }
