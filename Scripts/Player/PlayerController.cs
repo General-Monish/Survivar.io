@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public bool isWalking;
     [HideInInspector]
     public Vector2 moveInput;
+
+    public JoyStickMovement JoyStickMovement;
     
     // Start is called before the first frame update
     void Start()
@@ -40,9 +42,17 @@ public class PlayerController : MonoBehaviour
         }
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-         moveInput = new Vector2(horizontal, vertical);
+         moveInput = new Vector2(JoyStickMovement.JoyStickVec.x , JoyStickMovement.JoyStickVec.y);
          moveInput.Normalize();
-        rb.velocity = moveInput * playerStats.CurrentMoveSpeed;
+        if (JoyStickMovement.JoyStickVec.y != 0)
+        {
+            rb.velocity = moveInput * playerStats.CurrentMoveSpeed;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
+         
 
         //  if there is any input to determine if the player is walking
          isWalking = moveInput.magnitude > 0.1f;

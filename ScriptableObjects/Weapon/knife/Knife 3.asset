@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Knife 3
   m_EditorClassIdentifier: 
   prefabs: {fileID: 1029296818201331459, guid: 0159eed99bceea54b8df181b52548f03, type: 3}
-  damage: 1
+  damage: 3
   speed: 15
   coolDownDuration: 0.3
   pierce: 1
-  level: 2
+  level: 3
   nextLevelPrefab: {fileID: 0}
   name: Knife
-  description: it shoots with More Damage
+  description: it shoots with 3 Damage
   icon: {fileID: -1931941231, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

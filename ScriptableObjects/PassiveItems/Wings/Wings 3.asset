@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Wings 3
   m_EditorClassIdentifier: 
   multiPlier: 100
-  level: 2
+  level: 3
   nextLevelPrefab: {fileID: 0}
   name: Speedy
-  description: more spped addition
+  description: wings add 3 Speed
   icon: {fileID: 1401386649, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

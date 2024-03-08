@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Sword 2
   m_EditorClassIdentifier: 
   prefabs: {fileID: 1176487692205583522, guid: 2e5a4966f482ce64dbd52394fe63d1eb, type: 3}
-  damage: 1
+  damage: 2
   speed: 10
   coolDownDuration: 0.3
   pierce: 1
   level: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 1176487692205583522, guid: 2578e8981c7fd734c9dd2363a5ee0554, type: 3}
   name: Sword
-  description: shoots with more speed
+  description: Sword shoot 2 damage
   icon: {fileID: -24472546, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

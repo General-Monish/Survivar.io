@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: -24472546, guid: 1fb810b368667004bb0186de6afe231d, type: 3}
   name: Sword Character
   startingWeapon: {fileID: 1007073295970582192, guid: 8c6526f38d343c440bb63ff7a0a393dc, type: 3}
-  maxHealth: 100
+  maxHealth: 5
   recovery: 0
   moveSpeed: 5
   might: 1

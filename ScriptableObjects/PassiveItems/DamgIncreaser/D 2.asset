@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiPlier: 150
   level: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 1725770338761841042, guid: c414950ada04dd54d82aad3503e6fb7e, type: 3}
   name: Damager
-  description: more damage amount
+  description: increases the damage 2
   icon: {fileID: -62354891, guid: 1fb810b368667004bb0186de6afe231d, type: 3}

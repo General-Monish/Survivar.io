@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
     public bool chosingUpgrade;
 
     public GameObject playerObject;
+    public GameObject Joystick;
 
     private void Awake()
     {
@@ -72,21 +73,26 @@ public class GameManager : MonoBehaviour
             case GameState.GamePlay:
                 CheckForPauseAndResume();
                 UpdateStopWatch();
+                Joystick.SetActive(true);
                 break;
 
             case GameState.Paused:
                 CheckForPauseAndResume();
+                Joystick.SetActive(false);
                 break;
             case GameState.GameOver:
+
                 if (!isGameOver)
                 {
                     isGameOver = true;
                     Time.timeScale = 0;
+                    Joystick.SetActive(false);
                     Debug.Log("Game Is Over");
                     DisplayResults();
                 }
                 break;
             case GameState.LevelUp:
+                Joystick.SetActive(false);
                 if (!chosingUpgrade)
                 {
                     chosingUpgrade = true;

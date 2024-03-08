@@ -16,5 +16,5 @@ MonoBehaviour:
   level: 1
   nextLevelPrefab: {fileID: 1725770338761841042, guid: b45bf37c70d9c4744882da6d6218c72a, type: 3}
   name: Damager
-  description: increases the damage amount
+  description: increases the damage 1
   icon: {fileID: -62354891, guid: 1fb810b368667004bb0186de6afe231d, type: 3}
