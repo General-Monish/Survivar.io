@@ -2,7 +2,9 @@ using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -129,11 +131,16 @@ public class PlayerStats : MonoBehaviour
     InventoryManager inventory;
     public int weaponIndex;
     public int passiveItemIndex;
-    //public GameObject secWeaponTest;
 
-    //public GameObject firstPassiveItemTest;
+
+    public GameObject secWeaponTest;
+    public GameObject firstPassiveItemTest;
     public GameObject SecPassiveItemTest;
 
+    [Header("UI")]
+    public Image healthBar;
+    public Image ExpBar;
+    public TextMeshProUGUI LevelText;
 
     private void Awake()
     {
@@ -172,6 +179,9 @@ public class PlayerStats : MonoBehaviour
         GameManager.Instance.moveSpeed.text = "MoveSpeed:" + currentMoveSpeed;
 
         GameManager.Instance.ChosenCharacterUI(characterData);
+        UpdateHealthBar();
+        UpdateExpBar();
+        UpdateLevelTextBar();
     }
 
     private void Update()
@@ -191,6 +201,7 @@ public class PlayerStats : MonoBehaviour
     {
         exp += amount;
         LevelUpChecker();
+        UpdateExpBar();
     }
 
     void LevelUpChecker()
@@ -210,9 +221,19 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             expeCapping += expCapIncrease;
+            UpdateLevelTextBar();
 
             GameManager.Instance.StartLevelUp();
         }
+    }
+
+    void UpdateExpBar()
+    {
+        ExpBar.fillAmount = (float)exp / expeCapping;
+    }
+    void UpdateLevelTextBar()
+    {
+        LevelText.text = "LV" + level.ToString();
     }
 
     public void TakeDamage(float dmg)
@@ -226,6 +247,7 @@ public class PlayerStats : MonoBehaviour
             {
                 Kill();
             }
+            UpdateHealthBar();
         }
         
     }
@@ -293,4 +315,11 @@ public class PlayerStats : MonoBehaviour
 
         passiveItemIndex++;
     }
+
+     void UpdateHealthBar()
+    {
+        healthBar.fillAmount = currentHealth / characterData.MaxHealth;
+    }
+
+ 
 }
